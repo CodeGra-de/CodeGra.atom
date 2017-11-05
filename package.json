@@ -1,0 +1,24 @@
+{
+	"name": "CodeGra.atom",
+	"main": "./lib/code-gra.atom",
+	"version": "0.1.0",
+	"description": "A short description of your package",
+	"keywords": [
+		"CodeGra.de"
+	],
+	"repository": "https://github.com/CodeGra-de/CodeGra.atom",
+	"license": "AGPL-3.0",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"tmp": "0.0.33"
+	},
+	"consumedServices": {
+		"linter-indie": {
+			"versions": {
+				"2.0.0": "consumeLinter"
+			}
+		}
+	}
+}
