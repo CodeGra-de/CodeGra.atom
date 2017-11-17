@@ -31,8 +31,7 @@ The following commands are now available in Atom:
 | codegra-atom:edit-geedback | ✗ | Edit the current submission's global feedback. |
 | codegra-atom:edit-grade | ✗ | Edit the current submission's grade. |
 
-<a href="#footnote-1-a"><sup id="footnote-1-b">1</sup></a>: To use this feature the filesystem must be
-mounted with the `--fixed` flag.
+<a href="#footnote-1-a"><sup id="footnote-1-b">1</sup></a>: Require the filesystem to be mounted with the `--fixed` flag to use this feature.
 
 ## License
 
