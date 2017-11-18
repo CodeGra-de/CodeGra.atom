@@ -12,6 +12,7 @@
 		"atom": ">=1.0.0 <2.0.0"
 	},
 	"dependencies": {
+		"atom-package-deps": "^4.6.0",
 		"tmp": "0.0.33"
 	},
 	"consumedServices": {
@@ -20,5 +21,8 @@
 				"2.0.0": "consumeLinter"
 			}
 		}
-	}
+	},
+	"package-deps": [
+		"linter"
+	]
 }
