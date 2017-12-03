@@ -32,6 +32,10 @@ CodeGra.de filesystem:
 | codegra-atom:edit-geedback | ✗ | Edit the current submission's global feedback. |
 | codegra-atom:edit-grade | ✗ | Edit the current submission's grade. |
 | codegra-atom:select-rubric-item | ✗ | Select the rubric item that the cursor is on, deselecting any other item in the same group. |
+| codegra-atom:goto-prev-rubric-header | ✗ | Go to the previous header in a rubric file. |
+| codegra-atom:goto-next-rubric-header | ✗ | Go to the next header in a rubric file. |
+| codegra-atom:goto-prev-rubric-item | ✗ | Go to the previous item in a rubric file. |
+| codegra-atom:goto-next-rubric-item | ✗ | Go to the next item in a rubric file. |
 
 <a href="#footnote-1-a"><sup id="footnote-1-b">1</sup></a>: Require the filesystem to be mounted with the `--fixed` flag to use this feature.
 
