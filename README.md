@@ -20,7 +20,8 @@ Mounted
 $ atom ~/CodeGra.de/<course>/<assignment>/<submission>
 ```
 
-The following commands are now available in Atom:
+The following commands are now available in Atom when editing a file in a
+CodeGra.de filesystem:
 
 | Command | `--fixed`<a href="#footnote-1-b"><sup id="footnote-1-a">1</sup></a> | Description |
 |---|---|---|
@@ -30,6 +31,7 @@ The following commands are now available in Atom:
 | codegra-atom:open-rubric-selector | ✗ | Open the rubric selector file to fill in the rubric for the current submission. |
 | codegra-atom:edit-geedback | ✗ | Edit the current submission's global feedback. |
 | codegra-atom:edit-grade | ✗ | Edit the current submission's grade. |
+| codegra-atom:select-rubric-item | ✗ | Select the rubric item that the cursor is on, deselecting any other item in the same group. |
 
 <a href="#footnote-1-a"><sup id="footnote-1-b">1</sup></a>: Require the filesystem to be mounted with the `--fixed` flag to use this feature.
 
