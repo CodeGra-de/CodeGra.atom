@@ -21,6 +21,7 @@ import os
 import sys
 import subprocess
 import sphinx_fontawesome
+import json
 from datetime import date
 
 # sys.path.insert(0, os.path.abspath('../'))
@@ -72,10 +73,10 @@ author = 'CodeGrade Team'
 # built documents.
 #
 # The short X.Y version.
-# version = subprocess.check_output(
-#     ['git', 'describe', '--abbrev=0', '--tags']
-# ).decode('utf-8').strip()
-version = "v1.0.0"
+with open('../package.json') as package:
+    data = json.load(package)
+
+version = data['version']
 # The full version, including alpha/beta/rc tags.
 release = version
 

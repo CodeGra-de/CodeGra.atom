@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 .. rst-class:: fa fa-fontawesome
 
-CodeGrade Atom Plugin
+CodeGrade Atom Plug-in
 ======================================
 
 Even though the CodeGrade filesystem works together with any editor by manually
@@ -13,6 +13,9 @@ editor plugins. CodeGrade offers a package for `Atom <https://atom.io/>`__,
 a recent but popular open-source code editor from the GitHub team.
 This package is also known as *CodeGra.atom*.
 
+The code of the CodeGrade Atom plug-in is open-source and can be found on
+`Github <https://github.com/CodeGra-de/CodeGra.atom>`__.
+
 
 .. toctree::
     :maxdepth: 2
@@ -20,3 +23,4 @@ This package is also known as *CodeGra.atom*.
 
     install
     usage
+    Back to Filesystem Documentation <https://fs-docs.codegra.de>
