@@ -19,7 +19,7 @@ The code of the CodeGrade Atom plug-in is open-source and can be found on
 
 .. toctree::
     :maxdepth: 2
-    :caption: CodeGrade Emacs Plugin
+    :caption: CodeGrade Emacs Plug-in
 
     install
     usage
