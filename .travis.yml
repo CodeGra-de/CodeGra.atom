@@ -26,6 +26,4 @@ script:
   - travis-sphinx build --source=docs/
 
 after_success:
-  - coveralls
-  - codecov
   - travis-sphinx deploy -c docs-fs.codegra.de
