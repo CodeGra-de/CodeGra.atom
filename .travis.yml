@@ -26,4 +26,4 @@ script:
   - travis-sphinx build --source=docs/
 
 after_success:
-  - travis-sphinx deploy -c docs-fs.codegra.de
+  - travis-sphinx deploy -c docs-atom.codegra.de
