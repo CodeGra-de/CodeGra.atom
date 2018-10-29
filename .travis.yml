@@ -19,11 +19,11 @@ matrix:
     - python: "3.7-dev" # 3.7 development branch
 
 install:
-  - pip install -r docs_requirements.txt || true
+  - pip install -r docs_requirements.txt
 
 script:
   - ( cd docs; make html )
   - travis-sphinx build --source=docs/
 
 after_success:
-  - travis-sphinx deploy -c docs-atom.codegra.de
+  - travis-sphinx deploy -c atom-docs.codegra.de
