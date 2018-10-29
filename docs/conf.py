@@ -17,12 +17,13 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
-import os
-import sys
-import subprocess
-import sphinx_fontawesome
 import json
+import os
+import subprocess
+import sys
 from datetime import date
+
+import sphinx_fontawesome
 
 # sys.path.insert(0, os.path.abspath('../'))
 
@@ -44,10 +45,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.doctest',
     'sphinx.ext.githubpages',
-    'sphinxcontrib.httpdomain',
-    'sphinxcontrib.autohttp.flask',
-    'sphinxcontrib.autohttp.flaskqref',
-    'sphinx_autodoc_typehints',
     'sphinx_fontawesome',
 ]
 
@@ -74,9 +71,8 @@ author = 'CodeGrade Team'
 #
 # The short X.Y version.
 with open('../package.json') as package:
-    data = json.load(package)
+    version = json.load(package)['version']
 
-version = data['version']
 # The full version, including alpha/beta/rc tags.
 release = version
 
