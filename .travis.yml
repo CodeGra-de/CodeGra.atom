@@ -1,0 +1,29 @@
+language: python
+notifications:
+  email: false
+
+services:
+  - postgresql
+  - redis-server
+
+branches:
+  only:
+    - master
+
+cache:
+  pip: true
+  apt: true
+
+matrix:
+  include:
+    - python: "3.7-dev" # 3.7 development branch
+
+install:
+  - pip install -r docs_requirements.txt
+
+script:
+  - ( cd docs; make html )
+  - travis-sphinx build --source=docs/
+
+after_success:
+  - travis-sphinx deploy -c atom-docs.codegra.de
