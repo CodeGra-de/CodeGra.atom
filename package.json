@@ -1,6 +1,6 @@
 {
-	"name": "CodeGra-atom",
-	"main": "./lib/codegra-atom",
+	"name": "CodeGrade-atom",
+	"main": "./lib/codegrade-atom",
 	"version": "0.2.1",
 	"description": "The CodeGra.fs Atom plugin",
 	"keywords": [
