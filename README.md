@@ -1,4 +1,4 @@
-# CodeGrade.atom
+# CodeGrade-atom
 
 The Atom plugin to communicate with [CodeGra.de](https://codegra.de/)'s
 filesystem: [CodeGra.fs](https://github.com/CodeGra-de/CodeGra.de).
