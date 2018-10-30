@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using the Atom Plugin &mdash; CodeGrade Atom Plugin 0.3.2 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Installation" href="install.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">CodeGrade Atom Plug-in</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the Atom Plugin</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://fs-docs.codegra.de">Back to Filesystem Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CodeGrade Atom Plugin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Using the Atom Plugin</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-the-atom-plugin">
+<h1>Using the Atom Plugin<a class="headerlink" href="#using-the-atom-plugin" title="Permalink to this headline">¶</a></h1>
+<p>After installation, the mounted folder (e.g. <code class="docutils literal notranslate"><span class="pre">mnt/</span></code>) can be opened in Atom to
+make use of the plugin with the command <code class="docutils literal notranslate"><span class="pre">atom</span> <span class="pre">mnt/</span></code>.
+The following commands are available in Atom when editing a file in the
+CodeGrade filesystem:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="9%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head"><code class="docutils literal notranslate"><span class="pre">--fixed</span></code></th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="3">codegrade:edit-line-comment       | ✓           | Edit the comment(s) on the line(s) with a cursor on them.</td>
+</tr>
+<tr class="row-odd"><td colspan="3">codegrade:delete-line-comment     | ✓           | Delete the comment(s) on the line(s) with a cursor on them.</td>
+</tr>
+<tr class="row-even"><td colspan="3">codegrade:open-rubric-editor      | ✗           | Edit the rubric of the assignment of the current file.</td>
+</tr>
+<tr class="row-odd"><td colspan="3">codegrade:open-rubric-selector    | ✗           | Open the rubric selector file to fill in the rubric for the current submission.</td>
+</tr>
+<tr class="row-even"><td colspan="3">codegrade:edit-geedback           | ✗           | Edit the current submission’s global feedback.</td>
+</tr>
+<tr class="row-odd"><td colspan="3">codegrade:edit-grade              | ✗           | Edit the current submission’s grade.</td>
+</tr>
+<tr class="row-even"><td colspan="3">codegrade:select-rubric-item      | ✗           | Select the rubric item that the cursor is on, deselecting any other item in the same group.</td>
+</tr>
+<tr class="row-odd"><td colspan="3">codegrade:goto-prev-rubric-header | ✗           | Go to the previous header in a rubric file.</td>
+</tr>
+<tr class="row-even"><td colspan="3">codegrade:goto-next-rubric-header | ✗           | Go to the next header in a rubric file.</td>
+</tr>
+<tr class="row-odd"><td colspan="3">codegrade:goto-prev-rubric-item   | ✗           | Go to the previous item in a rubric file.</td>
+</tr>
+<tr class="row-even"><td colspan="3">codegrade:goto-next-rubric-item   | ✗           | Go to the next item in a rubric file.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">--fixed</span></code> flag when mounting is required to use line comment commands.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, CodeGrade
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
