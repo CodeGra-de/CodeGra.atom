@@ -71,7 +71,7 @@ author = 'CodeGrade Team'
 #
 # The short X.Y version.
 with open('../package.json') as package:
-    version = json.load(package)['version']
+    version = 'v' + json.load(package)['version']
 
 # The full version, including alpha/beta/rc tags.
 release = version
