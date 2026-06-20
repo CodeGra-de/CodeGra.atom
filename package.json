@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"atom-package-deps": "^4.6.0",
-		"tmp": "0.0.33"
+		"tmp": "0.2.7"
 	},
 	"consumedServices": {
 		"linter-indie": {
